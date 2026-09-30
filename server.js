@@ -53,7 +53,7 @@ app.post('/api/chat', async (req, res) => {
     
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-3.8-pro',
+            model: 'gemini-1.5-pro',
             contents: userMessage,
             config: {
                 systemInstruction: systemInstruction,
